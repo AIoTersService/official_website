@@ -10,57 +10,55 @@ export default function SolutionsSection() {
       subtitle: "智慧能源管理系統",
       description: "Smart Energy Management System",
       features: [
-        "動態監測分析 - 建築與工廠能源用量即時追蹤，主要設備壽命預測",
-        "碳排放管理，可視化界面管理",
-        "分時電價優化 (發展目標)",
-        "自動需求響應 (發展目標)",
-        "顯著節能優化經濟效益",
+        "動態監測分析 - 即時追蹤建築與工廠能源用量，預測主要設備壽命",
+        "節能分析 - 結合歷史與環境數據，計算最適能源策略",
+        "AI Agent 自主優化 - 持續學習與調整，提高能源管理效率",
+        "節能回饋機制 - 透明展示節能成果，支持決策與持續改善",
       ],
       englishFeatures: [
-        "Dynamic monitoring and analysis of building and factory energy usage",
-        "Carbon emission management with visualization interface",
-        "Time-of-use electricity price optimization (development goal)",
-        "Automatic demand response (development goal)",
-        "Significant energy-saving economic benefits",
+        "Real-time monitoring of energy usage in buildings and factories",
+        "Energy-saving analysis using historical and environmental data",
+        "AI Agent for autonomous optimization and adaptive learning",
+        "Transparent feedback mechanism for continuous energy improvement",
       ],
     },
     {
       icon: <Thermometer className="h-10 w-10 text-[#8B5A8C]" />,
       title: "AI-Driven HVAC Optimization",
-      subtitle: "AI 驅動的冷凍空調系統節能優化",
-      description: "AI-Driven HVAC System Energy Optimization",
+      subtitle: "AI 驅動的冷凍空調節能優化",
+      description: "AI-Driven HVAC System Optimization",
       features: [
-        "大數據分析 - 結合歷史用電與環境數據計算最佳空調策略(BI)",
-        "動態自適應運算 - 根據實時情況自動調整，提升用電效率10-30%",
-        "用戶行為整合 - 考量使用者習慣，提供舒適度與節能的最佳平衡",
-        "節能回饋機制 - 透明化展示節能成效，促進持續優化",
+        "大數據分析 - 根據環境與使用數據模擬最佳空調策略",
+        "動態自適應運算 - 實時調節設備運轉，提升效率 3-10%",
+        "用戶行為整合 - 考量使用者習慣，提升舒適與節能平衡",
+        "節能回饋機制 - 清晰呈現節能成果，強化永續管理",
       ],
       englishFeatures: [
-        "Big data analysis - combining historical electricity usage and environmental data",
-        "Dynamic adaptive computing - automatically adjusts to improve efficiency by 10-30%",
-        "User behavior integration - optimal balance between comfort and energy saving",
-        "Energy-saving feedback mechanism - transparent display of energy-saving results",
+        "Big data analysis to determine optimal cooling strategies",
+        "Real-time adaptive computing for 3-10% energy improvement",
+        "User behavior integration for comfort and energy balance",
+        "Clear energy-saving feedback for sustainability management",
       ],
     },
     {
       icon: <Zap className="h-10 w-10 text-[#E17B47]" />,
-      title: "Smart Power Trading Platform",
-      subtitle: "智能電力交易平台實踐",
-      description: "Smart Power Trading Platform Implementation",
+      title: "Smart Water Management Platform",
+      subtitle: "智能水資源管理平台",
+      description: "Smart Water Resource Management Platform",
       features: [
-        "高精度預測模型 - 電力價格、負荷與供需預測準確率高達90%以上",
-        "結合氣象資料與歷史模式分析，提供可靠決策依據",
-        "多智能體交易系統 - 自動化策略參與現貨與分時市場交易",
-        "智能代理持續學習優化，提升盈利能力",
+        "高精度預測模型 - 預測水質與用量，提升供需匹配準確度",
+        "結合氣象與歷史資料 - 作為多維決策依據，LLM 協助推論",
+        "AI Agent 自主優化 - 水資源配置智能化、自動化",
+        "智能代理協同 - 持續優化操作策略，提高資源使用效率",
       ],
       englishFeatures: [
-        "High-precision prediction model - over 90% accuracy for power price and demand",
-        "Combines weather data and historical patterns for reliable decision-making",
-        "Multi-agent trading system - automated strategies for spot and time-of-use markets",
-        "Intelligent agents continuously learn and optimize to improve profitability",
+        "High-accuracy prediction of water quality and demand",
+        "Integrated weather and historical data for LLM-aided decision-making",
+        "Autonomous AI agents for real-time water management",
+        "Collaborative agents for continuous optimization and efficiency",
       ],
     },
-  ]
+  ];
 
   return (
     <section id="solutions" className="py-16">
@@ -95,11 +93,6 @@ export default function SolutionsSection() {
                   </ul>
                 </div>
               </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full border-[#2B3A67] text-[#2B3A67] hover:bg-[#2B3A67]/5">
-                  了解更多 / Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>

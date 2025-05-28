@@ -10,8 +10,8 @@ export default function TrendsSection() {
     },
     {
       icon: <AlertTriangle className="h-6 w-6 text-[#8B5A8C]" />,
-      title: "傳統用電管理系統亟需現代化轉型",
-      description: "Traditional power management systems urgently need modernization",
+      title: "能源轉型與AI賦能：LLM與Agent驅動的智慧管理新紀元",
+      description: "Energy Transition & AI Empowerment: New Era of Smart Management Driven by LLM and Agents",
     },
     {
       icon: <Leaf className="h-6 w-6 text-[#E17B47]" />,

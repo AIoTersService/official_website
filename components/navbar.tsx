@@ -19,7 +19,6 @@ export default function Navbar() {
     { name: "Solutions", href: "#solutions" },
     { name: "Technology", href: "#technology" },
     { name: "Roadmap", href: "#roadmap" },
-    { name: "Contact", href: "#contact" },
   ]
 
   return (

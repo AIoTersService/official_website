@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AIoTers Technology | AI & IoT Energy Management Solutions",
-  description: "AIoTers: Empowering a new era of energy management with AI and IoT technologies.",
-    generator: 'v0.dev'
+  title: "AIoTers Technology | 智慧能源管理、AIoT、LLM、Agent、永續發展、碳中和、SaaS 解決方案",
+  description: "AIoTers 提供以 AI、IoT、LLM 大語言模型、Agent 為核心的智慧能源管理、智慧水資源、節能減碳、ESG、能源轉型、智能控制與 SaaS 雲端解決方案，協助企業實現永續發展與能源優化。",
 }
 
 export default function RootLayout({

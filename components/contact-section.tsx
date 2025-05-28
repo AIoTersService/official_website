@@ -76,73 +76,36 @@ export default function ContactSection() {
               </form>
             </CardContent>
           </Card>
-
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>合作領域 / Collaboration Areas</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4">
-                  <li>
-                    <h4 className="font-medium">電力交易之虛量卸載預測 (待開發)</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Power trading virtual load shedding prediction (to be developed)
-                    </p>
-                  </li>
-                  <li>
-                    <h4 className="font-medium">瞭解教授研究領域範圍</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Understanding professor's research field scope
-                    </p>
-                  </li>
-                  <li>
-                    <h4 className="font-medium">可合作與展開的能源議題</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Energy issues that can be collaborated on and developed
-                    </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                      範圍: ESG/能源/節能 / Scope: ESG/Energy/Energy Saving
-                    </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                      如: 空調節能，水處理 / E.g., HVAC energy saving, water treatment
-                    </p>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>聯絡資訊 / Contact Information</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <MapPin className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
-                    <div>
-                      <h4 className="font-medium">地址 / Address</h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">台灣台北市 / Taipei, Taiwan</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
-                    <div>
-                      <h4 className="font-medium">電子郵件 / Email</h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">contact@aioters.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Phone className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
-                    <div>
-                      <h4 className="font-medium">電話 / Phone</h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">+886 2 1234 5678</p>
-                    </div>
+          <Card>
+            <CardHeader>
+              <CardTitle>聯絡資訊 / Contact Information</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <MapPin className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
+                  <div>
+                    <h4 className="font-medium">地址 / Address</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">台灣台北市 / Taipei, Taiwan</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="flex items-start">
+                  <Mail className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
+                  <div>
+                    <h4 className="font-medium">電子郵件 / Email</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">contact@aioters.com</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Phone className="mr-3 h-5 w-5 text-gray-500 dark:text-gray-400" />
+                  <div>
+                    <h4 className="font-medium">電話 / Phone</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">+886 2 1234 5678</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
