@@ -23,10 +23,10 @@ export default function Navbar() {
   }
 
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Technology", href: "#technology" },
-    { name: "Roadmap", href: "#roadmap" },
+    { name: "首頁 / Home", href: "#" },
+    { name: "解決方案 / Solutions", href: "#solutions" },
+    { name: "技術 / Technology", href: "#technology" },
+    { name: "發展路徑 / Roadmap", href: "#roadmap" },
   ]
 
   return (

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-3">
-              <img src="/logo.png" alt="AIoTers Technology Logo" className="h-8 w-auto" />
+              <img src="/logo.png" alt="AIoTers Technology Logo" className="h-14 w-auto" />
             </Link>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               AIoT & AI Agent 賦能能源管理新紀元。

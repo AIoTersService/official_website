@@ -40,13 +40,13 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-[16/9] md:h-[400px] rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#2B3A67]/20 via-[#8B5A8C]/20 to-[#E17B47]/20 z-10" />
               <Image
                 src="/hero.png"
                 alt="AIoTers Technology Smart Energy Management"
                 fill
-                style={{ objectFit: "cover" }}
+                className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
