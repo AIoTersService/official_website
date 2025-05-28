@@ -37,6 +37,45 @@ export default function Navbar() {
             <img src="/logo.png" alt="AIoTers Technology Logo" className="h-12 w-auto" />
           </Link>
         </div>
+
+        {isMobile ? (
+          <>
+            <Button variant="ghost" size="icon" onClick={toggleMenu}>
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+            {isMenuOpen && (
+              <div className="absolute top-16 left-0 w-full bg-background border-b shadow-lg">
+                <nav className="container py-4">
+                  <ul className="flex flex-col space-y-4">
+                    {navItems.map((item) => (
+                      <li key={item.name}>
+                        <Link
+                          href={item.href}
+                          className="text-sm font-medium transition-colors hover:text-primary"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
+            )}
+          </>
+        ) : (
+          <nav className="flex items-center gap-6">
+            <ul className="flex items-center gap-6">
+              {navItems.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-sm font-medium transition-colors hover:text-primary">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   )
