@@ -46,7 +46,8 @@ export default function HeroSection() {
                 src="/hero.png"
                 alt="AIoTers Technology Smart Energy Management"
                 fill
-                className="object-cover"
+                className="object-contain md:object-cover"
+                style={{ objectPosition: 'center' }}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />

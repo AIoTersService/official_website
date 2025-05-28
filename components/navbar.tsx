@@ -37,60 +37,6 @@ export default function Navbar() {
             <img src="/logo.png" alt="AIoTers Technology Logo" className="h-12 w-auto" />
           </Link>
         </div>
-
-        {isMobile ? (
-          <>
-            <Button variant="ghost" size="icon" onClick={toggleMenu}>
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
-            {isMenuOpen && (
-              <div className="absolute top-16 left-0 w-full bg-background border-b shadow-lg">
-                <nav className="container py-4">
-                  <ul className="flex flex-col space-y-4">
-                    {navItems.map((item) => (
-                      <li key={item.name}>
-                        <Link
-                          href={item.href}
-                          className="text-sm font-medium transition-colors hover:text-primary"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {item.name}
-                        </Link>
-                      </li>
-                    ))}
-                    <li>
-                      <Button
-                        size="sm"
-                        onClick={scrollToContact}
-                        className="w-full bg-gradient-to-r from-[#2B3A67] via-[#8B5A8C] to-[#E17B47] hover:opacity-90 transition-opacity"
-                      >
-                        Contact Us
-                      </Button>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            )}
-          </>
-        ) : (
-          <nav className="flex items-center gap-6">
-            <ul className="flex items-center gap-6">
-              {navItems.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm font-medium transition-colors hover:text-primary">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <Button
-              onClick={scrollToContact}
-              className="bg-gradient-to-r from-[#2B3A67] via-[#8B5A8C] to-[#E17B47] hover:opacity-90 transition-opacity"
-            >
-              Contact Us
-            </Button>
-          </nav>
-        )}
       </div>
     </header>
   )
