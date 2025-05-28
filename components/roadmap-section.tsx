@@ -17,7 +17,7 @@ export default function RoadmapSection() {
           <div className="absolute left-1/2 top-0 h-full w-px bg-indigo-400 -translate-x-1/2 z-0" />
 
           <div className="grid gap-8">
-            <div className="relative z-10 flex flex-col items-center text-center py-12">
+            <div className="relative z-10 flex flex-col items-center text-center py-6 px-8 md:px-0">
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-indigo-700 text-white flex items-center justify-center font-bold z-10">
                 1
               </div>
@@ -30,7 +30,7 @@ export default function RoadmapSection() {
               <p className="text-gray-500">Expand from BI decision-making to providing AI energy management capabilities</p>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center py-12">
+            <div className="relative z-10 flex flex-col items-center text-center py-6 px-8 md:px-0">
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-indigo-700 text-white flex items-center justify-center font-bold z-10">
                 2
               </div>
@@ -42,13 +42,13 @@ export default function RoadmapSection() {
               <h3 className="font-bold text-lg mt-2">能源領域最佳控制方案</h3>
               <p className="text-gray-500">Best control solutions in the energy field</p>
               <ul className="mt-2 space-y-1 text-gray-500">
-                <li className="flex items-center justify-center"><ArrowRight className="mr-2 h-4 w-4" />冷調空調水側AI方案 / HVAC water-side AI solution</li>
-                <li className="flex items-center justify-center"><ArrowRight className="mr-2 h-4 w-4" />氣側AI方案 / Air-side AI solution</li>
-                <li className="flex items-center justify-center"><ArrowRight className="mr-2 h-4 w-4" />水質管理AI方案 / Water quality management AI solution</li>
+                <li className="flex items-center md:justify-center"><ArrowRight className="mr-2 h-4 w-4" />冷調空調水側AI方案 / HVAC water-side AI solution</li>
+                <li className="flex items-center md:justify-center"><ArrowRight className="mr-2 h-4 w-4" />氣側AI方案 / Air-side AI solution</li>
+                <li className="flex items-center md:justify-center"><ArrowRight className="mr-2 h-4 w-4" />水質管理AI方案 / Water quality management AI solution</li>
               </ul>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center py-12">
+            <div className="relative z-10 flex flex-col items-center text-center py-6 px-8 md:px-0">
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-indigo-700 text-white flex items-center justify-center font-bold z-10">
                 3
               </div>
@@ -62,7 +62,7 @@ export default function RoadmapSection() {
               <p className="text-gray-500">有助企業實現減碳目標 / Helps enterprises achieve carbon reduction goals</p>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center py-12">
+            <div className="relative z-10 flex flex-col items-center text-center py-6 px-8 md:px-0">
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-indigo-700 text-white flex items-center justify-center font-bold z-10">
                 4
               </div>
