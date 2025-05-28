@@ -42,7 +42,7 @@ export default function HeroSection() {
             <div className="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#2B3A67]/20 via-[#8B5A8C]/20 to-[#E17B47]/20 z-10" />
               <img
-                src="/hero.png?height=400&width=600"
+                src="/hero.png?height=400&width=800"
                 alt="AIoTers Technology Smart Energy Management"
                 className="w-full h-full object-cover"
               />
