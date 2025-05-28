@@ -14,6 +14,14 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+    setIsMenuOpen(false)
+  }
+
   const navItems = [
     { name: "Home", href: "#" },
     { name: "Solutions", href: "#solutions" },
@@ -26,7 +34,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-3">
-            <img src="/logo.png" alt="AIoTers Technology Logo" className="h-8 w-auto" />
+            <img src="/logo.png" alt="AIoTers Technology Logo" className="h-12 w-auto" />
           </Link>
         </div>
 
@@ -53,6 +61,7 @@ export default function Navbar() {
                     <li>
                       <Button
                         size="sm"
+                        onClick={scrollToContact}
                         className="w-full bg-gradient-to-r from-[#2B3A67] via-[#8B5A8C] to-[#E17B47] hover:opacity-90 transition-opacity"
                       >
                         Contact Us
@@ -74,7 +83,10 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <Button className="bg-gradient-to-r from-[#2B3A67] via-[#8B5A8C] to-[#E17B47] hover:opacity-90 transition-opacity">
+            <Button
+              onClick={scrollToContact}
+              className="bg-gradient-to-r from-[#2B3A67] via-[#8B5A8C] to-[#E17B47] hover:opacity-90 transition-opacity"
+            >
               Contact Us
             </Button>
           </nav>

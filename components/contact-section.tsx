@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -10,6 +10,7 @@ import { Mail, MapPin, Phone } from "lucide-react"
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const successMessageRef = useRef<HTMLParagraphElement>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -30,6 +31,9 @@ export default function ContactSection() {
       if (response.ok) {
         setSubmitStatus('success')
         e.currentTarget.reset()
+        setTimeout(() => {
+          successMessageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }, 100)
       } else {
         setSubmitStatus('error')
       }
@@ -125,7 +129,10 @@ export default function ContactSection() {
                   />
                 </div>
                 {submitStatus === 'success' && (
-                  <p className="text-sm text-green-600 dark:text-green-400">
+                  <p
+                    ref={successMessageRef}
+                    className="text-sm text-green-600 dark:text-green-400"
+                  >
                     感謝您的訊息！我們會盡快回覆您。
                     <br />
                     Thank you for your message! We will get back to you soon.

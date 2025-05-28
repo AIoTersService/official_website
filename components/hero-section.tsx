@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -41,10 +42,13 @@ export default function HeroSection() {
           <div className="flex items-center justify-center">
             <div className="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#2B3A67]/20 via-[#8B5A8C]/20 to-[#E17B47]/20 z-10" />
-              <img
-                src="/hero.png?height=400&width=800"
+              <Image
+                src="/hero.png"
                 alt="AIoTers Technology Smart Energy Management"
-                className="w-full h-full object-cover"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
             </div>
           </div>
