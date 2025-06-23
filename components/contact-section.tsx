@@ -11,6 +11,7 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const successMessageRef = useRef<HTMLParagraphElement>(null)
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -33,7 +34,7 @@ export default function ContactSection() {
         console.log(result)
         if (result.ok) {
           setSubmitStatus('success')
-          e.currentTarget.reset()
+          formRef.current?.reset()
           setTimeout(() => {
             successMessageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
           }, 100)
@@ -74,7 +75,7 @@ export default function ContactSection() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <label
