@@ -29,11 +29,16 @@ export default function ContactSection() {
       })
 
       if (response.ok) {
-        setSubmitStatus('success')
-        e.currentTarget.reset()
-        setTimeout(() => {
-          successMessageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-        }, 100)
+        const result = await response.json()
+        if (result.ok) {
+          setSubmitStatus('success')
+          e.currentTarget.reset()
+          setTimeout(() => {
+            successMessageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }, 100)
+        } else {
+          setSubmitStatus('error')
+        }
       } else {
         setSubmitStatus('error')
       }
