@@ -27,9 +27,10 @@ export default function ContactSection() {
           'Accept': 'application/json'
         }
       })
-
+      console.log(response)
       if (response.ok) {
         const result = await response.json()
+        console.log(result)
         if (result.ok) {
           setSubmitStatus('success')
           e.currentTarget.reset()
@@ -43,6 +44,7 @@ export default function ContactSection() {
         setSubmitStatus('error')
       }
     } catch (error) {
+      console.log(error)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
