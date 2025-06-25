@@ -28,7 +28,7 @@ export default function HeroSection() {
               AIoTers: Empowering a new era of energy management with AI and IoT technologies.
             </p>
             <p className="max-w-[600px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
-              我們專注於智慧能源管理系統、智慧節能方法與智慧電力交易三大領域。透過尖端技術，為企業打造高效能源管理解決方案。
+              我們專注於智慧能源管理系統、智慧節能方法領域。透過尖端技術，為企業打造高效能源管理解決方案。
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button
